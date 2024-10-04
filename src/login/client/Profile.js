@@ -14,7 +14,7 @@ const Profile = () => {
     const fetchUserData = async () => {
       try {
         const username = localStorage.getItem('username');
-        const response = await axios.get(`http://localhost:5000/profile/${username}`);
+        const response = await axios.get(`https://codexhub-backends-server.onrender.com/profile/${username}`);
         setUser(response.data);
         setLoading(false);
       } catch (err) {
@@ -35,7 +35,7 @@ const Profile = () => {
       const username = localStorage.getItem('username');
 
       try {
-        const response = await axios.delete('http://localhost:5000/api/delete-user', {
+        const response = await axios.delete('https://codexhub-backends-server.onrender.com/api/delete-user', {
           data: { username },
         });
 

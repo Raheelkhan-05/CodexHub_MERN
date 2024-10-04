@@ -44,7 +44,7 @@ export default function Login(props) {
   
       try {
         const { forgotPasswordUsername, forgotPasswordEmail } = formData;
-        const response = await axios.put('http://localhost:5000/api/forgot-password', {
+        const response = await axios.put('https://codexhub-backends-server.onrender.com/api/forgot-password', {
           username: forgotPasswordUsername,
           email: forgotPasswordEmail,
         });
@@ -52,7 +52,7 @@ export default function Login(props) {
         if (response.status === 200) {
           const newPassword = window.prompt('Enter new password:');
           if (newPassword) {
-            await axios.put('http://localhost:5000/api/update-password', {
+            await axios.put('https://codexhub-backends-server.onrender.com/api/update-password', {
               username: forgotPasswordUsername,
               email: forgotPasswordEmail,
               newPassword: newPassword,
@@ -77,7 +77,7 @@ export default function Login(props) {
       if (isLogin) {
          // Handle Login
          try {
-            const response = await axios.post('http://localhost:5000/api/login', {
+            const response = await axios.post('https://codexhub-backends-server.onrender.com/api/login', {
                username: formData.username,
                password: formData.password,
             });
@@ -130,7 +130,7 @@ export default function Login(props) {
                email: formData.email,
             };
 
-            await axios.post('http://localhost:5000/api/signup', newUser);
+            await axios.post('https://codexhub-backends-server.onrender.com/api/signup', newUser);
 
             // Successful signup
             localStorage.setItem('username', newUser.username);
