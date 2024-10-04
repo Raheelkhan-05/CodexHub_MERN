@@ -3,8 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import './Navbar.css';
 import { useState, useEffect } from "react";
-import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 export default function Navbar(props) {
   const history = useHistory();
@@ -32,7 +31,7 @@ export default function Navbar(props) {
       style={{ backgroundColor: 'white', height: '70px' }}
     >
       <div className="container-fluid">
-        <a className="navbar-brand" aria-current="page" href="/home">
+        <Link className="navbar-brand" to="/home">
           <img
             src={logo}
             alt="Logo"
@@ -40,10 +39,10 @@ export default function Navbar(props) {
             height="40"
             className="d-inline-block align-text-top ms-3" style={{ borderRadius: "5px", display: "flex", position: "150px 150px" }}
           />
-        </a>
-        <a className="navbar-brand me-4 p-0" aria-current="page" href="/home">
+        </Link>
+        <Link className="navbar-brand me-4 p-0" to="/home">
           {props.title}
-        </a>
+        </Link>
 
         <button
           className="navbar-toggler collapsed"
@@ -59,35 +58,35 @@ export default function Navbar(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link" href="/home">
+              <Link className="nav-link" to="/home">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/contest">
+              <Link className="nav-link" to="/contest">
                 {props.aboutText}
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/practice">
+              <Link className="nav-link" to="/practice">
                 Practice
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/leaderboard">
+              <Link className="nav-link" to="/leaderboard">
                 Leaderboard
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/technews">
+              <Link className="nav-link" to="/technews">
                 Tech News
-              </a>
+              </Link>
             </li>
             {isUserRaheel() && (
               <li className="nav-item">
-                <a className="nav-link" href="/addcontest">
+                <Link className="nav-link" to="/addcontest">
                   Add Contest
-                </a>
+                </Link>
               </li>
             )}
           </ul>
@@ -98,17 +97,17 @@ export default function Navbar(props) {
           </div>
           {isLoggedIn ? (
             <>
-              <a href="/profile" className="btn btn-primary me-2" style={{ borderRadius: '30px' }}>
+              <Link to="/profile" className="btn btn-primary me-2" style={{ borderRadius: '30px' }}>
                 Profile
-              </a>
+              </Link>
               <button className="btn btn-danger" style={{ borderRadius: '30px' }} onClick={handleLogout}>
                 Logout
               </button>
             </>
           ) : (
-            <a href="/login" className="btn btn-dark" style={{ borderRadius: '30px', color: 'white' }}>
+            <Link to="/login" className="btn btn-dark" style={{ borderRadius: '30px', color: 'white' }}>
               Login <i className="fa fa-sign-in" style={{ fontSize: '16px' }}></i>
-            </a>
+            </Link>
           )}
         </div>
       </div>
