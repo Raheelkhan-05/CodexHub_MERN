@@ -18,7 +18,7 @@ export default function AddContest() {
     e.preventDefault();
 
     try {
-      await axios.post('http://localhost:5000/addcontest', formData);
+      await axios.post('https://codexhub-backends-server.onrender.com/addcontest', formData);
       alert('Contest added successfully!');
       setFormData({
         platform: '',
