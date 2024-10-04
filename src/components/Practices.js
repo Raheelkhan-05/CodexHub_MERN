@@ -117,7 +117,7 @@ const App = () => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await fetch('http://localhost:5000/practice');
+        const response = await fetch('https://codexhub-backends-server.onrender.com/practice');
         const data = await response.json();
         setQuestions(data);
       } catch (error) {

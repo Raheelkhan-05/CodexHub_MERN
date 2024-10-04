@@ -37,7 +37,7 @@ export default function Prep(props) {
   useEffect(() => {
     const fetchContests = async () => {
       try {
-        const response = await fetch('http://localhost:5000/contest');
+        const response = await fetch('https://codexhub-backends-server.onrender.com/contest');
         const data = await response.json();
         setApiData(data);
         setContests(data); // Store the fetched data in the contests state
