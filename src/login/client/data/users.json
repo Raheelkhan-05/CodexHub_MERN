@@ -1,0 +1,42 @@
+[
+  {
+    "username": "khush",
+    "password": "kkk",
+    "email": "khush@gmail.com"
+  },
+  {
+    "username": "raheel",
+    "password": "rrr",
+    "email": "raheel@gmail.com"
+  },
+  {
+    "username": "utsav",
+    "password": "uuu",
+    "email": "utsav@gmail.com"
+  },
+  {
+    "username": "aditya",
+    "password": "aaa",
+    "email": "aditya@gmail.com"
+  },
+  {
+    "username": "sahil",
+    "password": "sss",
+    "email": "sahil@gmail.com"
+  },
+  {
+    "username": "het",
+    "password": "hhh",
+    "email": "het@gmail.com"
+  },
+  {
+    "username": "yuvraj",
+    "password": "yyy",
+    "email": "yuvraj@gmail.com"
+  },
+  {
+    "username": "catlina",
+    "password": "ccc",
+    "email": "catlina@gmail.com"
+  }
+]

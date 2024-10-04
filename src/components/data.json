@@ -1,0 +1,156 @@
+[
+        {
+            "platform": "CodeForces",
+            "name": "European Championship 2024",
+            "start": "2024-03-24T15:30:00Z",
+            "end": "2024-03-24T20:30:00Z",
+            "url": "https://codeforces.com/contests/1949"
+        },
+        {
+            "platform": "CodeChef",
+            "name": "Starter 126",
+            "start": "2024-03-20T20:00:00Z",
+            "end": "2024-03-20T22:00:00Z",
+            "url": "https://www.codechef.com/START126"
+        },
+        {
+            "platform": "Leetcode",
+            "name": "Weekly Contest 388",
+            "start": "2024-03-10T20:00:00Z",
+            "end": "2024-03-10T22:00:00Z",
+            "url": "https://leetcode.com/contest/weekly-contest-388/"
+        },
+        {
+            "platform": "Leetcode",
+            "name": "Biweekly Contest 127",
+            "start": "2024-03-30T20:00:00Z",
+            "end": "2024-03-30T22:00:00Z",
+            "url": "https://leetcode.com/contest/biweekly-contest-127/"
+        },
+        {
+            "platform": "CodeForces",
+            "name": "Codeforces Round 937 (Div. 4)",
+            "start": "2024-03-28T20:05:00Z",
+            "end": "2024-03-28T22:05:00Z",
+            "url": "https://codeforces.com/contests/1950"
+        },
+        {
+            "platform": "CodeChef",
+            "name": "Starter 127",
+            "start": "2024-03-27T20:00:00Z",
+            "end": "2024-03-27T22:00:00Z",
+            "url": "https://www.codechef.com/START127"
+        },
+        {
+            "platform": "Leetcode",
+            "name": "Weekly Contest 389",
+            "start": "2024-03-17T20:00:00Z",
+            "end": "2024-03-17T22:00:00Z",
+            "url": "https://leetcode.com/contest/weekly-contest-389/"
+        },
+        {
+            "platform": "Leetcode",
+            "name": "Biweekly Contest 126",
+            "start": "2024-03-16T20:00:00Z",
+            "end": "2024-03-16T22:00:00Z",
+            "url": "https://leetcode.com/contest/biweekly-contest-126/"
+        },
+        {
+            "platform": "CodeChef",
+            "name": "Starter 125",
+            "start": "2024-03-13T20:00:00Z",
+            "end": "2024-03-13T22:00:00Z",
+            "url": "https://www.codechef.com/START125"
+        },
+        {
+            "platform": "Leetcode",
+            "name": "Weekly Contest 391",
+            "start": "2024-03-31T8:00:00Z",
+            "end": "2024-03-31T10:00:00Z",
+            "url": "https://leetcode.com/contest/weekly-contest-391/"
+        },
+        {
+            "platform": "Leetcode",
+            "name": "Weekly Contest 390",
+            "start": "2024-03-24T20:00:00Z",
+            "end": "2024-03-24T22:00:00Z",
+            "url": "https://leetcode.com/contest/weekly-contest-390/"
+        },
+        {
+            "platform": "CodeForces",
+            "name": "CF R(Div.1 + Div.2)",
+            "start": "2024-04-06T20:05:00Z",
+            "end": "2024-04-06T22:05:00Z",
+            "url": "https://codeforces.com/contests/1951"
+        },
+        {
+            "platform": "CodeChef",
+            "name": "Starter 128",
+            "start": "2024-04-03T20:00:00Z",
+            "end": "2024-04-03T22:00:00Z",
+            "url": "https://www.codechef.com/START128"
+        },
+        {
+            "platform": "CodeForces",
+            "name": "April Fools Day Contest 2024",
+            "start": "2024-04-01T20:05:00Z",
+            "end": "2024-04-01T22:05:00Z",
+            "url": "https://codeforces.com/contests/1952"
+        },
+        {
+            "platform": "Leetcode",
+            "name": "Dummy Contest",
+            "start": "2024-04-01T9:30:00Z",
+            "end": "2024-04-01T11:00:00Z",
+            "url": "#"
+        },
+        {
+            "platform": "CodeChef",
+            "name": "Dummy Contest",
+            "start": "2024-04-01T9:30:00Z",
+            "end": "2024-04-01T11:30:00Z",
+            "url": "#"
+        },
+        {
+            "platform": "CodeForces",
+            "name": "Dummy Contest",
+            "start": "2024-04-01T9:30:00Z",
+            "end": "2024-04-01T11:15:00Z",
+            "url": "#"
+        },
+        {
+            "platform": "Leetcode",
+            "name": "Biweekly Contest 128",
+            "start": "2024-04-13T20:00:00Z",
+            "end": "2024-04-13T22:00:00Z",
+            "url": "https://leetcode.com/contest/biweekly-contest-128/"
+        },
+        {
+            "platform": "Leetcode",
+            "name": "Weekly Contest 392",
+            "start": "2024-04-07T20:00:00Z",
+            "end": "2024-04-07T22:00:00Z",
+            "url": "https://leetcode.com/contest/weekly-contest-392/"
+        },
+        {
+            "platform": "CodeChef",
+            "name": "Starter 129",
+            "start": "2024-04-10T20:00:00Z",
+            "end": "2024-04-10T22:00:00Z",
+            "url": "https://www.codechef.com/START129"
+        },
+        {
+            "platform": "CodeChef",
+            "name": "Starter 130",
+            "start": "2024-04-17T20:00:00Z",
+            "end": "2024-04-17T22:00:00Z",
+            "url": "https://www.codechef.com/START130"
+        },
+        {
+            "platform": "CodeChef",
+            "name": "Starter 131",
+            "start": "2024-04-24T20:00:00Z",
+            "end": "2024-04-24T22:00:00Z",
+            "url": "https://www.codechef.com/START131"
+        }
+    ]

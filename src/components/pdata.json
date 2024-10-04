@@ -1,0 +1,242 @@
+[
+    {
+        "name": "Two Sum",
+        "platform": "LeetCode",
+        "acceptance": "52.2%",
+        "difficulty": "Easy",
+        "solved": true,
+        "url": "https://leetcode.com/problems/two-sum/"
+    },
+    {
+        "name": "Little Chef and the Number of Good Pairs",
+        "platform": "CodeChef",
+        "acceptance": "47.5%",
+        "difficulty": "Easy",
+        "solved": false,
+        "url": "https://www.codechef.com/MARCH14/problems-old/PROSUM"
+    },
+    {
+        "name": "Vasya's Birthday",
+        "platform": "Codeforces",
+        "acceptance": "40.0%",
+        "difficulty": "Easy",
+        "solved": false,
+        "url": "https://codeforces.com/problemset/problem/676/C"
+    },
+    {
+        "name": "Reverse Integer",
+        "platform": "LeetCode",
+        "acceptance": "28.5%",
+        "difficulty": "Medium",
+        "solved": true,
+        "url": "https://leetcode.com/problems/reverse-integer/"
+    },
+    {
+        "name": "Simple Equation",
+        "platform": "CodeChef",
+        "acceptance": "49.5%",
+        "difficulty": "Easy",
+        "solved": false,
+        "url": "https://www.codechef.com/AUG221D/problems-old/HLEQN"
+    },
+    {
+        "name": "Way Too Long Words",
+        "platform": "Codeforces",
+        "acceptance": "52.4%",
+        "difficulty": "Easy",
+        "solved": false,
+        "url": "https://codeforces.com/problemset/problem/71/A"
+    },
+    {
+        "name": "Add Two Numbers",
+        "platform": "LeetCode",
+        "acceptance": "42.5%",
+        "difficulty": "Medium",
+        "solved": true,
+        "url": "https://leetcode.com/problems/add-two-numbers/"
+    },
+    {
+        "name": "Fibonacci Series",
+        "platform": "CodeChef",
+        "acceptance": "35.5%",
+        "difficulty": "Easy",
+        "solved": false,
+        "url": "https://www.codechef.com/SEPT19A/problems-old/FIBEASY"
+    },
+    {
+        "name": "Anton and Letters",
+        "platform": "Codeforces",
+        "acceptance": "47.8%",
+        "difficulty": "Easy",
+        "solved": false,
+        "url": "https://codeforces.com/problemset/problem/443/A"
+    },
+    {
+        "name": "Trapping Rain Water",
+        "platform": "LeetCode",
+        "acceptance": "60.9%",
+        "difficulty": "Hard",
+        "solved": true,
+        "url": "https://leetcode.com/problems/trapping-rain-water/"
+    },
+    {
+        "name": "Find the Remainder",
+        "platform": "CodeChef",
+        "acceptance": "53.7%",
+        "difficulty": "Easy",
+        "solved": false,
+        "url": "https://www.codechef.com/practice/course/basic-programming-concepts/DIFF500/problems/FLOW002"
+    },
+    {
+        "name": "Gift Shop",
+        "platform": "Codeforces",
+        "acceptance": "49.2%",
+        "difficulty": "Easy",
+        "solved": false,
+        "url": "https://codeforces.com/problemset/problem/1619/D"
+    },
+    {
+        "name": "Median of Two Sorted Arrays",
+        "platform": "LeetCode",
+        "acceptance": "39.7%",
+        "difficulty": "Hard",
+        "solved": true,
+        "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/"
+    },
+    {
+        "name": "Reversal Game",
+        "platform": "CodeChef",
+        "acceptance": "23.5%",
+        "difficulty": "Medium",
+        "solved": false,
+        "url": "https://www.codechef.com/practice/course/1-star-difficulty-problems/DIFF1200/problems/BALREV"
+    },
+    {
+        "name": "Lucky Division",
+        "platform": "Codeforces",
+        "acceptance": "17.5%",
+        "difficulty": "Medium",
+        "solved": false,
+        "url": "https://codeforces.com/problemset/problem/122/A"
+    },
+    {
+        "name": "Rotate Image",
+        "platform": "LeetCode",
+        "acceptance": "74.0%",
+        "difficulty": "Medium",
+        "solved": true,
+        "url": "https://leetcode.com/problems/rotate-image/"
+    },
+    {
+        "name": "A+ B Problem",
+        "platform": "CodeChef",
+        "acceptance": "42.8%",
+        "difficulty": "Easy",
+        "solved": false,
+        "url": "https://www.codechef.com/learn/course/cpp-beginner/BC00BC25/problems/BMCC06"
+    },
+    {
+        "name": "Queue with Two Deques",
+        "platform": "Codeforces",
+        "acceptance": "12.7%",
+        "difficulty": "Medium",
+        "solved": false,
+        "url": "https://codeforces.com/problemset/problem/1579/E2"
+    },
+    {
+        "name": "Spiral Matrix",
+        "platform": "LeetCode",
+        "acceptance": "49.1%",
+        "difficulty": "Medium",
+        "solved": true,
+        "url": "https://leetcode.com/problems/spiral-matrix/"
+    },
+    {
+        "name": "Life, the Universe, and Everything",
+        "platform": "CodeChef",
+        "acceptance": "19.5%",
+        "difficulty": "Medium",
+        "solved": false,
+        "url": "https://www.codechef.com/XYZTT/problems-old/TEST"
+    },
+    {
+        "name": "IQ Test",
+        "platform": "Codeforces",
+        "acceptance": "9.8%",
+        "difficulty": "Medium",
+        "solved": false,
+        "url": "https://codeforces.com/problemset/problem/25/A"
+    },
+    {
+        "name": "Sqrt(x)",
+        "platform": "LeetCode",
+        "acceptance": "38.6%",
+        "difficulty": "Easy",
+        "solved": true,
+        "url": "https://leetcode.com/problems/sqrtx/"
+    },
+    {
+        "name": "Chef and his Chocolates",
+        "platform": "CodeChef",
+        "acceptance": "60.4%",
+        "difficulty": "Easy",
+        "solved": false,
+        "url": "https://www.codechef.com/practice/course/basic-programming-concepts/DIFF500/problems/CHEFCHOCO"
+    },
+    {
+        "name": "Next Round",
+        "platform": "Codeforces",
+        "acceptance": "34.8%",
+        "difficulty": "Easy",
+        "solved": false,
+        "url": "https://codeforces.com/problemset/problem/158/A"
+    },
+    {
+        "name": "Prime Minister",
+        "platform": "CodeChef",
+        "acceptance": "21.5%",
+        "difficulty": "Medium",
+        "solved": false,
+        "url": "https://www.codechef.com/MAY15/problems-old/CHAPD"
+    },
+    {
+        "name": "Presents",
+        "platform": "Codeforces",
+        "acceptance": "17.7%",
+        "difficulty": "Medium",
+        "solved": false,
+        "url": "https://codeforces.com/problemset/problem/136/A"
+    },
+    {
+        "name": "Coin Change",
+        "platform": "CodeChef",
+        "acceptance": "32.7%",
+        "difficulty": "Medium",
+        "solved": false,
+        "url": "https://www.codechef.com/learn/course/cpp-beginner/BC00BC15/problems/LBC14"
+    },
+    {
+        "name": "Watermelon",
+        "platform": "Codeforces",
+        "acceptance": "54.5%",
+        "difficulty": "Easy",
+        "solved": false,
+        "url": "https://codeforces.com/problemset/problem/4/A"
+    },
+    {
+        "name": "Amusement Park",
+        "platform": "Codeforces",
+        "acceptance": "61.2%",
+        "difficulty": "Easy",
+        "solved": false,
+        "url": "https://codeforces.com/problemset/problem/1193/A"
+    },
+    {
+        "name": "George and Accommodation",
+        "platform": "Codeforces",
+        "acceptance": "34.5%",
+        "difficulty": "Easy",
+        "solved": false,
+        "url": "https://codeforces.com/problemset/problem/467/A"
+    }
+]
