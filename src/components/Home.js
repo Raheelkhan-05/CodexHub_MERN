@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import video from './Videos/video-2.mp4';
+import { Link } from 'react-router-dom';
 import Services from './ServicesWeOffer';
 import '../index.css';
 
@@ -35,12 +36,12 @@ const Home = ({ isLoggedIn }) => {
             We will help you in every coding phase to <br /> design and build your skills.
           </p>
           <div className="mt-3">
-            <a 
-              href={isLoggedIn ? '/contest' : '/login'} 
-              className="btn btn-primary btn-lg"
-            >
-              {isLoggedIn ? "Explore now" : "Get Started"}
-            </a>
+                     <Link
+  to={isLoggedIn ? '/contest' : '/login'}
+  className="btn btn-primary btn-lg"
+>
+  {isLoggedIn ? "Explore now" : "Get Started"}
+</Link>
           </div>
         </div>
       </div>
