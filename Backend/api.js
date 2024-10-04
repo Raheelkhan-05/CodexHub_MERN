@@ -2,17 +2,17 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
-const connectDB = require('../src/components/MDB/connection');
-const contestModel = require('../src/components/MDB/contestModel');
-const practiceModel = require('../src/components/MDB/practiceModel');
-const User = require('../src/components/MDB/userModel');
-const UserData = require('../src/components/MDB/userDataModel');
+const connectDB = require('./connection');
+const contestModel = require('./contestModel');
+const practiceModel = require('./practiceModel');
+const User = require('./userModel');
+const UserData = require('./userDataModel');
 connectDB();
 const app = express();
 app.use(express.json());
 
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://codexhub.onrender.com');
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   next();
