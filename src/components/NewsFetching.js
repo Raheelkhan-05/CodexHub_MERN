@@ -2,38 +2,44 @@ import React, { useEffect, useState } from "react";
 import NewsCard from "./NewsDisp";
 import PropTypes from "prop-types";
 import InfiniteScroll from "react-infinite-scroll-component";
-import video1 from './Videos/v1.mp4'
+import video1 from './Videos/v1.mp4';
 
 const Hackathons = (props) => {
-  const [articles, setArticles] = useState([])
-  const [page, setPage] = useState(1)
-  const [totalResults, setTotalResults] = useState(0)
+  const [articles, setArticles] = useState([]);
+  const [page, setPage] = useState(1);
+  const [totalResults, setTotalResults] = useState(0);
   
-  const capital = (string) => {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  };
+  const capital = (string) => string.charAt(0).toUpperCase() + string.slice(1);
 
   const update = async () => {
-    const url = `https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=e4f506faa2d34c7faf5388412b8651d5`;
-
-    let data = await fetch(url);
-    let parsedData = await data.json();
-    setArticles(parsedData.articles)
-    setTotalResults(parsedData.totalResults)
-  }
+    try {
+      const url = `https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`;
+      let data = await fetch(url);
+      if (!data.ok) throw new Error('Failed to fetch news');
+      let parsedData = await data.json();
+      setArticles(parsedData.articles);
+      setTotalResults(parsedData.totalResults);
+    } catch (error) {
+      console.error("Failed to load data", error);
+    }
+  };
 
   useEffect(() => {
     document.title = `CodexHub - ${capital(props.category)}`;
     update();
-  }, [])
+  }, [props.category]);
 
   const fetchMoreData = async () => {
-    let url = `https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=b30fab9fa58541b591608873b8d6cd84&page=${page + 1}&pageSize=${props.pageSize}`;
-    setPage(page + 1)
-    let data = await fetch(url);
-    let parsedData = await data.json();
-    setArticles(articles.concat(parsedData.articles))
-    setTotalResults(parsedData.totalResults)
+    try {
+      let url = `https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&apiKey=${process.env.REACT_APP_NEWS_API_KEY}&page=${page + 1}&pageSize=${props.pageSize}`;
+      setPage(page + 1);
+      let data = await fetch(url);
+      let parsedData = await data.json();
+      setArticles(articles.concat(parsedData.articles));
+      setTotalResults(parsedData.totalResults);
+    } catch (error) {
+      console.error("Failed to load more data", error);
+    }
   };
 
   return (
@@ -52,12 +58,12 @@ const Hackathons = (props) => {
             {articles.map((element) => (
               <NewsCard
                 key={element.url}
-                title={element.title ? element.title.slice(0, 45) : ""}
-                description={element.description ? element.description.slice(0, 88) : ""}
-                imageUrl={element.urlToImage}
+                title={element.title ? element.title.slice(0, 45) : "No Title"}
+                description={element.description ? element.description.slice(0, 88) : "No Description"}
+                imageUrl={element.urlToImage ? element.urlToImage : "default_image_url"}
                 hid={element.url}
-                date={element.publishedAt}
-                source={element.source.name}
+                date={element.publishedAt || "Unknown Date"}
+                source={element.source.name || "Unknown Source"}
               />
             ))}
           </div>
@@ -65,7 +71,7 @@ const Hackathons = (props) => {
       </InfiniteScroll>
     </div>
   );
-}
+};
 
 Hackathons.defaultProps = {
   pageSize: 20,
