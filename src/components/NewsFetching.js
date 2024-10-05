@@ -14,13 +14,29 @@ const Hackathons = (props) => {
   const update = async () => {
     try {
       const url = `https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`;
-      let data = await fetch(url);
-      if (!data.ok) throw new Error('Failed to fetch news');
-      let parsedData = await data.json();
-      setArticles(parsedData.articles);
-      setTotalResults(parsedData.totalResults);
+      console.log('Fetching from URL:', url);
+      
+      const response = await fetch(url);
+      
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error('API response not ok:', response.status, errorText);
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      const parsedData = await response.json();
+      console.log('Received data:', parsedData);
+      
+      if (parsedData.status === 'error') {
+        console.error('API returned an error:', parsedData.message);
+        throw new Error(parsedData.message);
+      }
+      
+      setArticles(parsedData.articles || []);
+      setTotalResults(parsedData.totalResults || 0);
     } catch (error) {
       console.error("Failed to load data", error);
+      // You might want to set some state here to show an error message to the user
     }
   };
 
